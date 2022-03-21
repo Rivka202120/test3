@@ -1,0 +1,39 @@
+-- create database test3;
+
+-- use test3;
+
+-- create table companies(
+-- id int auto_increment,
+-- name_company varchar(40),
+-- primary key(id)
+-- );
+
+-- create table servers(
+-- id int auto_increment,
+-- name_server varchar(40),
+-- ip_server varchar(40),
+-- id_company int,
+-- status_server boolean default false,
+-- created_server datetime default now(),
+-- primary key(id),
+-- foreign key(id_company) references companies(id)
+-- );
+
+-- insert into companies(name_company)
+-- values('Microsoft'),('IBM'),('GoDaddy'),('DigitalIO')
+
+-- insert into servers(name_server,ip_server,id_company)
+-- values('example1','123.500.410.500',1),('example2','200.856.417.500',4),('example3','589.477.331.101',1),
+-- ('example4','748.555.667.854',2),('example5','120.475.410.785',3),('example6','413.789.744.201',3)
+
+-- select * from companies inner join servers on companies.id = servers.id_company;
+
+-- select servers.*, companies.name_company, companies.id as 'idCompany' from companies inner join servers on companies.id = servers.id_company;
+
+
+
+update servers
+SET status_server =  0
+
+
+
